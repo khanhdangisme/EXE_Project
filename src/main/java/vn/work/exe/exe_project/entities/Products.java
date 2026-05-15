@@ -42,5 +42,5 @@ public class Products {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "SupplierID")
-    private Suppliers supplier;
+    private Suppliers suppliers;
 }

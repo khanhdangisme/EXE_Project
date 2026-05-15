@@ -19,7 +19,7 @@ public class WeighingLogsController {
 
     @PostMapping("/upload")
     public ResponseEntity<?> handleWeighing(
-            @RequestParam("image") MultipartFile image,
+            @RequestParam(value ="image", required = false) MultipartFile image, //sau này có Cam sẽ bỏ required = false
             @RequestParam("weight") Double weight,
             @RequestParam("scaleId") String scaleId,
             @RequestParam("productId") String productId) {
